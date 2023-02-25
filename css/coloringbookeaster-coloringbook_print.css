@@ -1,0 +1,18 @@
+#main_div
+{
+transform:scale(1,1) !important;
+left:50%;
+//top:50%;
+margin-left:-250px;
+//margin-top:-330px;
+}
+
+.icon
+{
+display:none;
+}
+
+#bottom_panel
+{
+display:none;
+}
