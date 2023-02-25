@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<title>Easter Coloring Book</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script type="text/javascript" src="js/coloringbook.js"></script>
+
+	
+<link href="css/coloringbookeaster-coloringbook.css" rel="stylesheet" type="text/css">
+<link href="css/coloringbookeaster-coloringbook_print.css" rel="stylesheet" type="text/css" media="print">
+
+
+	
+</head>
+<body onload="init();">
+
+<div id="main_div">
+	<div id="background_div">
+		<canvas id="canvas_sketch" width="768" height="934" style="position:absolute;top:0px;"></canvas>
+		<canvas id="canvas_bg" width="768" height="934" style="position:absolute;top:0px;"></canvas>
+
+		<canvas id="canvas_inlines" width="768" height="934" style="position:absolute;top:0px;display:none;"></canvas>
+	</div>
+
+	<div id="icons_div">
+		<div id="print_icon" class="icon"  onclick="magnifier.show();" ></div>
+		<a onclick="download_pic(this);" href="coloringbookeaster.html"><div id="download_icon" class="icon"></div></a>
+
+		<div id="spare_icon" class="icon" ></div>
+	
+		<div id="thick_icon" class="icon" onclick="thick_mode();">
+			<div id="thick_inner"></div>
+		</div>
+		<div id="fill_icon" class="icon" onclick="fill_mode();"></div>
+		<div id="inlines_icon" class="icon" onclick="inlines_mode();">تلوين في الحدود</div>
+		<div id="back_icon" class="icon" onclick="main_menu_pre(1);"></div>
+	</div>
+
+	<div id="bottom_panel">
+
+		<div id="color_selector_container" style="position:absolute;left:0px;width:400px;height:90px;overflow:hidden;">
+			<div id="color_selector" style="position:absolute;top:0px;left:0px;width:100%;height:90px;"></div>
+			</div>
+		<div id="bottom_icons" style="position:absolute;right:0px;"></div>
+	</div>
+<input type="color" id="color" value="#0000ff" onclick="setGradient()" translate="yes" onchange="setGradient()" style="position:absolute;top:5px;left:150px; width:10%;height:60px;"/>
+		
+
+	<div id="frontpage_div"></div>
+
+	<div id="loading_div"></div>
+
+	<div id="greyout"></div>
+	
+	<div id="popup_div"></div>
+
+  
+    
+  </div>
+</div>
+	   
+	<img src="images/images-frontpage.jpg" style="width:1px;">
+</div>
+ <script src="html-magnifier.js"></script>
+  <script>
+    /* global HTMLMagnifier */
+    const magnifier = new HTMLMagnifier({ width: 100, height: 100 });
+
+   // magnifier.show();
+
+  </script>
+</body>
+</html>
