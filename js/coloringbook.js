@@ -11,8 +11,8 @@ ctx_sketch.strokeStyle = x.value;
 selected_color =  x.value;
 }
 function init(){screen_width=500,screen_height=850
-var e='<img src="images/choosepic.png" style="width:500px;margin-top:3px;"><table style="width:100%;"><tr>',t=0
-for(var o in pics)e+='<td class="frontpage_td"><img src="images/'+pics[o]+'.png" style="max-width:60px;height:100px;cursor:pointer;" onclick="load_pic('+o+');"></td>',t++,3==t&&(t=0,e+="</tr><tr>")
+var e='<img src="https://xodiosx.github.io/coloring1/images/choosepic.png" style="width:500px;margin-top:3px;"><table style="width:100%;"><tr>',t=0
+for(var o in pics)e+='<td class="frontpage_td"><img src="https://xodiosx.github.io/coloring1/images/'+pics[o]+'.png" style="max-width:60px;height:100px;cursor:pointer;" onclick="load_pic('+o+');"></td>',t++,3==t&&(t=0,e+="</tr><tr>")
 e+="</tr></table>",mobile||(e+='<span class="large orange button" style="margin-top:17px;" onclick="show_embed();" id="embed_button">Click here to add this to your website/blog</span><div id="embed_code" style="display:none;font-size:27px;">Copy and paste the code below:<br><input type="text" style="width:460px;font-size:21px;" value="<iframe src=&quot;//funhtml5games.com?embed=eastercoloring&quot; style=&quot;width:410px;height:640px;border:none;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;></iframe>" onclick="this.select();"></div>'),document.getElementById("frontpage_div").innerHTML=e,document.getElementById("loading_div").ontouchmove=ce,document.getElementById("frontpage_div").ontouchmove=ce,document.getElementById("icons_div").ontouchmove=ce,document.getElementById("bottom_panel").ontouchmove=ce,canvas_width=screen_width,canvas_height=screen_height-40,document.getElementById("main_div").style.width=screen_width+"px",document.getElementById("main_div").style.height=screen_height+"px",init_sketch(),document.getElementById("color_selector_container").style.width=canvas_width+"px"
 var n=""
 for(var o in colors)n+='<div style="display:inline-block;height:45px;background:'+colors[o]+';"><img src="images/crayon_down.png" style="width:19.9px;cursor:pointer;" onclick="select_color(\''+colors[o]+'\', this);" id="crayon_'+o+'"></div>'
